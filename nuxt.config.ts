@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
-      title: 'nuxt3 creative base',
+      title: 'nuxt creative base',
       link: [
         { rel: 'icon', href: '/favicon.ico', sizes: '32x32' },
         { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
@@ -17,14 +17,14 @@ export default defineNuxtConfig({
         { rel: 'manifest', href: '/manifest.webmanifest' },
       ],
       script: [
-        { 'defer': true, 'src': 'https://tracking.jnkl.dev/script.js', 'data-website-id': '1862b35f-c5b6-4845-a072-95c964c7a5e5', 'data-domains': 'nuxt3-creative-base.vercel.app', 'data-do-not-track': 'true' },
+        { 'defer': true, 'src': 'https://tracking.jnkl.dev/script.js', 'data-website-id': '1862b35f-c5b6-4845-a072-95c964c7a5e5', 'data-domains': 'nuxt-creative-base.vercel.app', 'data-do-not-track': 'true' },
       ],
       meta: [
         { name: 'theme-color', content: '#000000' },
-        { name: 'description', content: 'nuxt3 starter for creative projects, includes scss setup, gsap, lenis scroll, curtainsjs to load media with webgl, custom cursor, inview trigger, splash screen, robots.txt, sitemap.xml' },
-        { property: 'og:title', content: 'nuxt3 creative base' },
-        { property: 'og:description', content: 'nuxt3 starter for creative projects, includes scss setup, gsap, lenis scroll, curtainsjs to load media with webgl, custom cursor, inview trigger, splash screen, robots.txt, sitemap.xml' },
-        // { property: 'og:image', content: 'https://nuxt3-creative-base.vercel.app/og-image.jpg' },
+        { name: 'description', content: 'nuxt starter for creative projects, includes scss setup, gsap, lenis scroll, curtainsjs to load media with webgl, custom cursor, inview trigger, splash screen, robots.txt, sitemap.xml' },
+        { property: 'og:title', content: 'nuxt creative base' },
+        { property: 'og:description', content: 'nuxt starter for creative projects, includes scss setup, gsap, lenis scroll, curtainsjs to load media with webgl, custom cursor, inview trigger, splash screen, robots.txt, sitemap.xml' },
+        // { property: 'og:image', content: 'https://nuxt-creative-base.vercel.app/og-image.jpg' },
         { property: 'og:type', content: 'website' },
         { property: 'og:locale', content: 'en' },
       ],
@@ -36,7 +36,7 @@ export default defineNuxtConfig({
   ],
 
   site: {
-    url: 'https://nuxt3-creative-base.vercel.app',
+    url: 'https://nuxt-creative-base.vercel.app',
     // indexable: false,
   },
 

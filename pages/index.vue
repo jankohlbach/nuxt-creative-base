@@ -19,13 +19,13 @@ onMounted(() => {
         :class="{ inview }"
         data-inview-manual
       >
-        nuxt3 creative base
+        nuxt creative base
       </h1>
       <p
         :class="{ inview }"
         data-inview-manual
       >
-        nuxt3 starter for creative projects, includes scss setup, gsap, lenis scroll, curtainsjs to load media with webgl, custom cursor, inview trigger, splash screen, robots.txt, sitemap.xml
+        nuxt starter for creative projects, includes scss setup, gsap, lenis scroll, curtainsjs to load media with webgl, custom cursor, inview trigger, splash screen, robots.txt, sitemap.xml
       </p>
     </section>
     <section class="container">

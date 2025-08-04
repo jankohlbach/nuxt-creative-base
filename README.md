@@ -1,6 +1,6 @@
-# nuxt3 creative base
+# nuxt creative base
 
-nuxt3 starter for creative projects, includes scss setup, gsap, lenis scroll, curtainsjs to load media with webgl, custom cursor, inview trigger, splash screen, robots.txt, sitemap.xml
+nuxt starter for creative projects, includes scss setup, gsap, lenis scroll, curtainsjs to load media with webgl, custom cursor, inview trigger, splash screen, robots.txt, sitemap.xml
 
 Feedback, ideas, and everything else always welcome.
 
