@@ -2192,6 +2192,15 @@
     estree-walker "^2.0.2"
     picomatch "^4.0.2"
 
+"@rollup/pluginutils@^5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-5.2.0.tgz#eac25ca5b0bdda4ba735ddaca5fbf26bd435f602"
+  integrity sha512-qWJ2ZTbmumwiLFomfzTyt5Kng4hwPi9rwCYN4SHb6eaRU1KNO4ccxINHr/VhH4GgPlt1XfSTLX2LBTme8ne4Zw==
+  dependencies:
+    "@types/estree" "^1.0.0"
+    estree-walker "^2.0.2"
+    picomatch "^4.0.2"
+
 "@rollup/rollup-android-arm-eabi@4.42.0":
   version "4.42.0"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.42.0.tgz#8baae15a6a27f18b7c5be420e00ab08c7d3dd6f4"
@@ -2630,6 +2639,19 @@
   dependencies:
     "@typescript-eslint/types" "8.38.0"
     eslint-visitor-keys "^4.2.1"
+
+"@unhead/addons@^2.0.12":
+  version "2.0.13"
+  resolved "https://registry.yarnpkg.com/@unhead/addons/-/addons-2.0.13.tgz#c7eecbe719b9f404f8ada341c1e1afe00bdab034"
+  integrity sha512-T4oM/u8sW9Rk9PWl3j9bzI8nkjXhNz3bhYFyhyIit6mx8inKqkFQlQ1WPne7MS5i+KDu+0QhfT3Y/0FUkjuViw==
+  dependencies:
+    "@rollup/pluginutils" "^5.2.0"
+    estree-walker "^3.0.3"
+    magic-string "^0.30.17"
+    mlly "^1.7.4"
+    ufo "^1.6.1"
+    unplugin "^2.3.5"
+    unplugin-ast "^0.15.1"
 
 "@unhead/vue@^2.0.12":
   version "2.0.12"
@@ -3257,7 +3279,7 @@ argparse@^2.0.1:
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
   integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
 
-ast-kit@^2.0.0, ast-kit@^2.1.0:
+ast-kit@^2.0.0, ast-kit@^2.1.0, ast-kit@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ast-kit/-/ast-kit-2.1.1.tgz#b6b44e160b8fcc3781cfe0f382713ecefb061ea5"
   integrity sha512-mfh6a7gKXE8pDlxTvqIc/syH/P3RkzbOF6LeHdcKztLEzYe6IMsRCL7N8vI7hqTGWNxpkCuuRTpT21xNWqhRtQ==
@@ -5370,6 +5392,11 @@ image-meta@^0.2.1:
   resolved "https://registry.yarnpkg.com/image-meta/-/image-meta-0.2.1.tgz#3a9eb9f0bfd2f767ca2b0720623c2e03742aa29f"
   integrity sha512-K6acvFaelNxx8wc2VjbIzXKDVB0Khs0QT35U6NkGfTdCmjLNcO2945m7RFNR9/RPVFm48hq7QPzK8uGH18HCGw==
 
+image-size@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/image-size/-/image-size-2.0.2.tgz#84a7b43704db5736f364bf0d1b029821299b4bdc"
+  integrity sha512-IRqXKlaXwgSMAMtpNzZa1ZAe8m+Sa1770Dhk8VkSsP9LS+iHD62Zd8FQKs8fbPiagBE7BzoFX23cxFnwshpV6w==
+
 immutable@^5.0.2:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-5.0.3.tgz#aa037e2313ea7b5d400cd9298fa14e404c933db1"
@@ -6433,6 +6460,24 @@ nth-check@^2.0.1, nth-check@^2.1.1:
   integrity sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==
   dependencies:
     boolbase "^1.0.0"
+
+nuxt-seo-utils@^7.0.14:
+  version "7.0.14"
+  resolved "https://registry.yarnpkg.com/nuxt-seo-utils/-/nuxt-seo-utils-7.0.14.tgz#122cad058678b60e264a0f0672c370bd1a0b0ad5"
+  integrity sha512-SvUCHWhnt8U/nKIpmnbe3lIvv6GewqxbxkLvcU6R7TeEIHoPnBtNLPN+nKOj12fMrDThv178/RAfw7KXq6meiw==
+  dependencies:
+    "@nuxt/kit" "^4.0.1"
+    "@unhead/addons" "^2.0.12"
+    defu "^6.1.4"
+    escape-string-regexp "^5.0.0"
+    fast-glob "^3.3.3"
+    image-size "^2.0.2"
+    nuxt-site-config "^3.2.2"
+    pathe "^2.0.3"
+    pkg-types "^2.2.0"
+    scule "^1.3.0"
+    semver "^7.7.2"
+    ufo "^1.6.1"
 
 nuxt-site-config-kit@3.2.2:
   version "3.2.2"
@@ -8384,6 +8429,16 @@ unixify@^1.0.0:
   integrity sha512-6bc58dPYhCMHHuwxldQxO3RRNZ4eCogZ/st++0+fcC1nr0jiGUtAdBJ2qzmLQWSxbtz42pWt4QQMiZ9HvZf5cg==
   dependencies:
     normalize-path "^2.1.1"
+
+unplugin-ast@^0.15.1:
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/unplugin-ast/-/unplugin-ast-0.15.1.tgz#ed3402eb6a6c21a74fb318f838992345a71cb256"
+  integrity sha512-7nhKrf61dXPU7vqzu3yxHs0YaUToIYB32FlnNLxdAOjF+bI+16LpDygGtdRuhJKgwPCpz0tNaAEamxaGB/SQOQ==
+  dependencies:
+    "@babel/generator" "^7.28.0"
+    ast-kit "^2.1.1"
+    magic-string-ast "^1.0.0"
+    unplugin "^2.3.5"
 
 unplugin-utils@^0.2.4:
   version "0.2.4"
