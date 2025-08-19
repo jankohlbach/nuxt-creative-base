@@ -1,4 +1,8 @@
 {
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
@@ -12,4 +16,13 @@
   "[scss]": {
     "editor.formatOnSave": false,
   },
+  "eslint.format.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro",
+    "typescript",
+    "typescriptreact",
+    "vue",
+  ],
 }
