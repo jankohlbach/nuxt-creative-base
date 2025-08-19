@@ -1,3 +1,4 @@
+@use 'functions' as *;
 @use 'mixins' as *;
 
 // reset
@@ -179,9 +180,4 @@ html.lenis body {
       visibility: visible;
     }
   }
-}
-
-// tweakpane
-.tp-dfwv {
-  position: fixed !important;
 }

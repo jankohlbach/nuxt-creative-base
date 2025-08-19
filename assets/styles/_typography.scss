@@ -45,7 +45,7 @@ h6,
 }
 
 .richtext {
-  * {
+  > * {
     &:not(:last-child):not(br) {
       margin-bottom: 1em;
     }
