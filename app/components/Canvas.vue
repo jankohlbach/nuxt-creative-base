@@ -36,7 +36,9 @@ const initializeCanvasItems = () => {
     planes.push(plane)
 
     plane.onRender(() => {
-      plane.uniforms.time.value = (plane.uniforms.time.value as number) + 1
+      if (plane.uniforms.time) {
+        plane.uniforms.time.value = (plane.uniforms.time.value as number) + 1
+      }
     })
   })
 }
