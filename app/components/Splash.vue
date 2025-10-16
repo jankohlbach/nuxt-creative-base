@@ -1,41 +1,31 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 
-const { $scrollStart } = useNuxtApp()
+const { $scrollStop, $scrollStart } = useNuxtApp()
 
 const splash = useTemplateRef('splash')
 
 onMounted(() => {
-  if (!sessionStorage.getItem('intro:done') && splash.value) {
-    splash.value.style.display = 'block'
-  }
+  if (!sessionStorage.getItem('splash:played')) {
+    $scrollStop()
 
-  const tl = gsap.timeline({ delay: 0.2, defaults: { duration: 1, ease: 'power4.inOut' } })
-    .to(splash.value, {
-      scale: 0.8,
-    })
-    .to(splash.value, {
-      scale: 0.5,
-      autoAlpha: 0,
-    })
-    .call(() => {
-      window.dispatchEvent(new Event('intro:done'))
-    }, [], '<0.4')
-    .call(() => {
-      if (!sessionStorage.getItem('intro:done')) {
+    gsap.timeline({ delay: 0.2, defaults: { duration: 1, ease: 'power4.inOut' } })
+      .to(splash.value, {
+        scale: 0.8,
+      })
+      .to(splash.value, {
+        scale: 0.5,
+        autoAlpha: 0,
+      })
+      .call(() => {
+        window.dispatchEvent(new Event('splash:done'))
+      }, [], '<0.4')
+      .call(() => {
         $scrollStart()
-        sessionStorage.setItem('intro:done', 'true')
-      }
-    })
-
-  if (sessionStorage.getItem('intro:done') && splash.value) {
-    nextTick(() => {
-      tl.progress(1)
-      window.dispatchEvent(new Event('intro:done'))
-      setTimeout(() => {
-        $scrollStart()
-      }, 500)
-    })
+        sessionStorage.setItem('splash:played', 'true')
+      })
+  } else {
+    window.dispatchEvent(new Event('splash:done'))
   }
 })
 </script>
@@ -50,6 +40,14 @@ onMounted(() => {
     </div>
   </div>
 </template>
+
+<style lang="scss">
+  html.play-splash {
+    .splash {
+      display: block;
+    }
+  }
+</style>
 
 <style lang="scss" scoped>
 .splash {

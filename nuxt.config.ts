@@ -23,6 +23,7 @@ export default defineNuxtConfig({
         // TODO: preload font
       ],
       script: [
+        { innerHTML: 'if (!sessionStorage.getItem("splash:played")) {document.documentElement.classList.add("play-splash");}' },
         { 'defer': true, 'src': 'https://tracking.jnkl.dev/script.js', 'data-website-id': '1862b35f-c5b6-4845-a072-95c964c7a5e5', 'data-domains': 'nuxt-creative-base.vercel.app', 'data-do-not-track': 'true' },
       ],
       meta: [

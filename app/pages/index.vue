@@ -6,7 +6,7 @@ definePageMeta({
 })
 
 onMounted(() => {
-  window.addEventListener('intro:done', () => {
+  window.addEventListener('splash:done', () => {
     inview.value = true
   })
 })
