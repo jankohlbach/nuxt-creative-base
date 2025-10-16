@@ -13,9 +13,13 @@
   margin: 0;
 }
 
+:root {
+  interpolate-size: allow-keywords;
+}
+
 html, body {
-  min-height: 100%;
   height: auto;
+  min-height: 100%;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
 }
@@ -86,6 +90,7 @@ body {
   font-family: var(--ff-primary);
   font-weight: var(--fw-regular);
   font-size: var(--fs-base);
+  color: var(--c-dark);
   background-color: var(--c-light);
 }
 

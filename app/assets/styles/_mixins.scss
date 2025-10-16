@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin has-motion() {
+  @media (prefers-reduced-motion: no-preference) {
+    @content;
+  }
+}
