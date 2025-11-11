@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "kohlbachjan.the-best-theme",
+    "EditorConfig.EditorConfig",
+    "dbaeumer.vscode-eslint",
+    "Vue.volar",
+  ],
+  "unwantedRecommendations": []
+}
