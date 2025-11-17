@@ -1,4 +1,5 @@
-import withNuxt from '.nuxt/eslint.config.mjs'
+// @ts-check
+import withNuxt from './.nuxt/eslint.config.mjs'
 
 export default withNuxt(
   // your custom flat configs go here, for example:
