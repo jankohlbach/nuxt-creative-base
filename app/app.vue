@@ -43,6 +43,7 @@ onMounted(() => {
 </script>
 
 <template>
+  <NuxtRouteAnnouncer />
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
