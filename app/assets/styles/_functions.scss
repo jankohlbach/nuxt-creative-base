@@ -1,5 +1,6 @@
 @use 'sass:math';
 @use 'sass:meta';
+@use 'sass:string';
 
 @function strip-unit($number) {
   @if meta.type-of($number)=='number' and not math.is-unitless($number) {
@@ -16,11 +17,12 @@
 @function clamp-fluid($start, $end) {
   // Determine if this is an ascending or descending range
   $is-ascending: $start < $end;
-  $min-value: if($is-ascending, $start, $end);
-  $max-value: if($is-ascending, $end, $start);
 
   @if $is-ascending {
     // Normal ascending range (e.g., 16 to 32)
+    $min-value: $start;
+    $max-value: $end;
+
     @return clamp(
       to-rem($start),
       calc(
@@ -32,6 +34,9 @@
     );
   } @else {
     // Descending range (e.g., -63 to -104)
+    $min-value: $end;
+    $max-value: $start;
+
     @return clamp(
       to-rem($end),
       calc(
@@ -45,10 +50,10 @@
 }
 
 @function str-replace($string, $search, $replace: "") {
-  $index: str-index($string, $search);
+  $index: string.index($string, $search);
 
   @if $index {
-    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    @return string.slice($string, 1, $index - 1) + $replace + str-replace(string.slice($string, $index + string.length($search)), $search, $replace);
   }
 
   @return $string;
