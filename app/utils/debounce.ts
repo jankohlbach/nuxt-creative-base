@@ -1,3 +1,6 @@
+/*
+ * Classic debounce function to limit how often a function can fire
+ */
 export const debounce = <T extends (...args: unknown[]) => unknown>(
   func: T,
   timeout = 300,
