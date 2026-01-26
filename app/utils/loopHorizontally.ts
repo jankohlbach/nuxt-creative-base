@@ -27,7 +27,7 @@ export const loopHorizontally = (items, config): gsap.core.Timeline => {
       onProgress = config.onProgress,
       lastIndex = 0,
       noLoop = config.noLoop || false,
-      tl = gsap.timeline({repeat: config.repeat, onUpdate: function() {
+      tl = gsap.timeline({ data: { reversed: false }, repeat: config.repeat, onUpdate: function() {
           let i = tl.closestIndex();
           let rawProgress = tl.progress();
 
@@ -194,6 +194,7 @@ export const loopHorizontally = (items, config): gsap.core.Timeline => {
     if (config.reversed) {
       tl.vars.onReverseComplete();
       tl.reverse();
+      tl.data.reversed = true;
     }
     if (config.draggable && typeof(Draggable) === "function") {
       proxy = document.createElement("div")

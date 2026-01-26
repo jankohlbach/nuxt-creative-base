@@ -25,7 +25,7 @@ export const loopVertically = (items, config): gsap.core.Timeline => {
   gsap.context(() => { // use a context so that if this is called from within another context or a gsap.matchMedia(), we can perform proper cleanup like the "resize" event handler on the window
     let onChange = config.onChange,
       lastIndex = 0,
-      tl = gsap.timeline({ repeat: config.repeat, onUpdate: onChange && function () {
+      tl = gsap.timeline({ data: { reversed: false }, repeat: config.repeat, onUpdate: onChange && function () {
         const i = tl.closestIndex()
         if (lastIndex !== i) {
           lastIndex = i
@@ -147,6 +147,7 @@ export const loopVertically = (items, config): gsap.core.Timeline => {
     if (config.reversed) {
       tl.vars.onReverseComplete()
       tl.reverse()
+      tl.data.reversed = true;
     }
     tl.closestIndex(true)
     lastIndex = curIndex
