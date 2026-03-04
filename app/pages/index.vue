@@ -112,6 +112,7 @@ p {
 }
 
 .media {
+  width: 100%;
   align-items: start;
 }
 
