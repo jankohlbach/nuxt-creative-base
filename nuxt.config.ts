@@ -1,3 +1,5 @@
+// import type { PluginOption } from 'vite'
+
 import glsl from 'vite-plugin-glsl'
 
 // TODO: change to final details
@@ -63,6 +65,7 @@ export default defineNuxtConfig({
         },
       },
     },
+    // @ts-expect-error - plugin's fault
     plugins: [glsl()],
   },
 
