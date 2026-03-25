@@ -65,7 +65,6 @@ export default defineNuxtConfig({
         },
       },
     },
-    // @ts-expect-error - plugin's fault
     plugins: [glsl()],
   },
 
