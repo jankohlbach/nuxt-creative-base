@@ -1,5 +1,3 @@
-// import type { PluginOption } from 'vite'
-
 import glsl from 'vite-plugin-glsl'
 
 // TODO: change to final details
