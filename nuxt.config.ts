@@ -47,6 +47,7 @@ export default defineNuxtConfig({
   ],
 
   site: {
+    name: title,
     // TODO: change to final domain
     url: 'https://nuxt-creative-base.vercel.app',
     // TODO: remove when going live
