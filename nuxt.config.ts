@@ -3,7 +3,7 @@ import glsl from 'vite-plugin-glsl'
 // TODO: change to final details
 const title = 'nuxt creative base'
 const description = 'nuxt starter for creative projects, includes scss setup, gsap, lenis scroll, curtainsjs to load media with webgl, custom cursor, inview trigger, splash screen, robots.txt, sitemap.xml'
-const shareImage = 'https://nuxt-creative-base.vercel.app/og-image.jpg'
+const shareImage = 'https://nuxt-creative-base.jnkl.dev/og-image.jpg'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -24,7 +24,7 @@ export default defineNuxtConfig({
       ],
       script: [
         { innerHTML: 'if (!sessionStorage.getItem("splash:played")) {document.documentElement.classList.add("play-splash");}' },
-        { 'defer': true, 'src': 'https://tracking.jnkl.dev/script.js', 'data-website-id': '1862b35f-c5b6-4845-a072-95c964c7a5e5', 'data-domains': 'nuxt-creative-base.vercel.app', 'data-do-not-track': 'true' },
+        { 'defer': true, 'src': 'https://tracking.jnkl.dev/script.js', 'data-website-id': '1862b35f-c5b6-4845-a072-95c964c7a5e5', 'data-domains': 'nuxt-creative-base.jnkl.dev', 'data-do-not-track': 'true' },
       ],
       meta: [
         { name: 'theme-color', content: '#111111' },
@@ -49,12 +49,12 @@ export default defineNuxtConfig({
   site: {
     name: title,
     // TODO: change to final domain
-    url: 'https://nuxt-creative-base.vercel.app',
+    url: 'https://nuxt-creative-base.jnkl.dev',
     // TODO: remove when going live
     // indexable: false,
   },
 
-  compatibilityDate: '2025-02-02',
+  compatibilityDate: '2026-03-27',
 
   vite: {
     css: {
