@@ -68,7 +68,8 @@ export default defineNuxtConfig({
   },
 
   typescript: {
-    typeCheck: true,
+    // TODO: hopefully temporary and not needed with future nuxt versions
+    typeCheck: 'build',
   },
 
   eslint: {
