@@ -32,7 +32,6 @@ export default defineNuxtConfig({
         { property: 'og:title', content: title },
         { property: 'og:description', content: description },
         { property: 'og:image', content: shareImage },
-        { property: 'og:type', content: 'website' },
         { property: 'og:locale', content: 'en' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: title },
